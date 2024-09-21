@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "ជី NPkK": 24,
         "ជី NPKKKk": 24,
         "ថ្នាំកសិកម្ម": 24,
-        "ថ្នាំគីមី": 24,
+        "ថ្នាំ​គីមី": 24,
         "ជីក្របី": 24,
         "ជីមាន់": 26,
         
