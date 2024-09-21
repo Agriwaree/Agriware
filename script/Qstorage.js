@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "ថ្នាំកសិកម្ម": 24,
         "ថ្នាំគីមី": 24,
         "ជីក្របី": 24,
+        "ជីមាន់": 26,
         
         
         
