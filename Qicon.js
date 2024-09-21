@@ -75,6 +75,16 @@ document.addEventListener("DOMContentLoaded", function () {
             const productImage = button.getAttribute('data-product-image');
             const quantity = parseInt(button.previousElementSibling.querySelector('.quantity').textContent);
 
+            // Get the available stock from the stock-quantity element
+            const stockElement = document.querySelector(`.stock-quantity[data-product="${productName}"]`);
+            const availableStock = parseInt(stockElement.textContent);
+
+            // Check if the requested quantity exceeds available stock
+            if (quantity > availableStock) {
+                alert(`Cannot add more than available stock. Available: ${availableStock}`);
+                return; // Exit the function if stock limit is exceeded
+            }
+
             // Check if product already in cart
             const existingProduct = cart.find(item => item.name === productName);
             if (existingProduct) {
