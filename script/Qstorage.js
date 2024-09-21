@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         "ជី Dapp": 23,
         "ជី Dappp": 24,
         "ជី Doppp": 24,
-        "ជី Dopp": 24,
+        "ជី Dop": 24,
         "ជី dop": 24,
         "ជី NPK": 24,
         "ជី NPKKK": 24,
