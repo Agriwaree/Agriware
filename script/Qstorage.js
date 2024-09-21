@@ -29,8 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
         "ជីក្របី": 24,
         "ជីមាន់": 26,
         
-        
-        
         // Add more products and their stock values here
     };
 
@@ -98,7 +96,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 let currentQuantity = parseInt(quantityDisplay.textContent);
 
                 if (action === 'increase') {
-                    quantityDisplay.textContent = currentQuantity + 1;
+                    if (currentQuantity < stockQuantity) {
+                        quantityDisplay.textContent = currentQuantity + 1;
+                    } else {
+                        alert(`Cannot increase quantity. Only ${stockQuantity} left in stock.`);
+                    }
                 } else if (action === 'decrease' && currentQuantity > 1) {
                     quantityDisplay.textContent = currentQuantity - 1;
                 }
